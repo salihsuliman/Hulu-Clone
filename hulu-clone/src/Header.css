@@ -4,7 +4,16 @@
     align-items: center;
     padding: 20px;
     justify-content: space-between;
-    background-color: black;
+    
+}
+
+.header::-webkit-scrollbar{
+    display: none;
+}
+
+.header{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .header__icons{
@@ -13,8 +22,40 @@
     text-align: center;
 }
 
+.header__icon > .MuiSvgIcon-root{
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__icon--active > p { 
+    display: inline-flex !important;
+}
+
+.header__icon:hover > p{
+    display: inline-flex;
+}
+
+.header__icon > p {
+    display: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: small;
+    font-size: 10px;
+
+}
+
+.header__icon{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 60px;
+}
+
 .header > img{
-    object-fit: contain;
+    object-fit: conatin;
     height: 80px;
 }
 
